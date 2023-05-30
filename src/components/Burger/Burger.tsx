@@ -13,6 +13,7 @@ const Burger = () => {
             {/*<div className="Salad"></div>*/}
             {/*<div className="Cheese"></div>*/}
             {/*<div className="Meat"></div>*/}
+            {/*<div className="Bacon"></div>*/}
             <div className="BreadBottom"></div>
             <p>Price:</p>
         </div>
