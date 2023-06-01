@@ -1,203 +1,207 @@
 .App {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .BreadBottom {
-  height: 13%;
-  width: 80%;
-  background: linear-gradient(#F08E4A, #e27b36);
-  border-radius: 0 0 30px 30px;
-  box-shadow: inset -15px 0 #c15711;
-  margin: 2% auto;
+    height: 13%;
+    width: 80%;
+    background: linear-gradient(#F08E4A, #e27b36);
+    border-radius: 0 0 30px 30px;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 2% auto;
 }
 
 .BreadTop {
-  height: 20%;
-  width: 80%;
-  background: linear-gradient(#bc581e, #e27b36);
-  border-radius: 50% 50% 0 0;
-  box-shadow: inset -15px 0 #c15711;
-  margin: 2% auto;
-  position: relative;
+    height: 20%;
+    width: 80%;
+    background: linear-gradient(#bc581e, #e27b36);
+    border-radius: 50% 50% 0 0;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 2% auto;
+    position: relative;
 }
 
 .Seeds1 {
-  width: 10%;
-  height: 15%;
-  position: absolute;
-  background-color: white;
-  left: 30%;
-  top: 50%;
-  border-radius: 40%;
-  transform: rotate(-20deg);
-  box-shadow: inset -2px -3px #c9c9c9;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    background-color: white;
+    left: 30%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(-20deg);
+    box-shadow: inset -2px -3px #c9c9c9;
 }
 
 .Seeds1:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: white;
-  left: -170%;
-  top: -260%;
-  border-radius: 40%;
-  transform: rotate(60deg);
-  box-shadow: inset -1px 2px #c9c9c9;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: -170%;
+    top: -260%;
+    border-radius: 40%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px 2px #c9c9c9;
 }
 
 .Seeds1:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: white;
-  left: 180%;
-  top: -50%;
-  border-radius: 40%;
-  transform: rotate(60deg);
-  box-shadow: inset -1px -3px #c9c9c9;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 180%;
+    top: -50%;
+    border-radius: 40%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px -3px #c9c9c9;
 }
 
 .Seeds2 {
-  width: 10%;
-  height: 15%;
-  position: absolute;
-  background-color: white;
-  left: 64%;
-  top: 50%;
-  border-radius: 40%;
-  transform: rotate(10deg);
-  box-shadow: inset -3px 0 #c9c9c9;
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    background-color: white;
+    left: 64%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(10deg);
+    box-shadow: inset -3px 0 #c9c9c9;
 }
 
 .Seeds2:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: white;
-  left: 150%;
-  top: -130%;
-  border-radius: 40%;
-  transform: rotate(90deg);
-  box-shadow: inset 1px 3px #c9c9c9;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 150%;
+    top: -130%;
+    border-radius: 40%;
+    transform: rotate(90deg);
+    box-shadow: inset 1px 3px #c9c9c9;
 }
 
 .Meat {
-  width: 80%;
-  height: 8%;
-  background: linear-gradient(#7f3608, #702e05);
-  margin: 2% auto;
-  border-radius: 15px;
+    width: 80%;
+    height: 8%;
+    background: linear-gradient(#7f3608, #702e05);
+    margin: 2% auto;
+    border-radius: 15px;
 }
 
 .Cheese {
-  width: 90%;
-  height: 4.5%;
-  margin: 2% auto;
-  background: linear-gradient(#f4d004, #d6bb22);
-  border-radius: 20px;
+    width: 90%;
+    height: 4.5%;
+    margin: 2% auto;
+    background: linear-gradient(#f4d004, #d6bb22);
+    border-radius: 20px;
 }
 
 .Salad {
-  width: 85%;
-  height: 7%;
-  margin: 2% auto;
-  background: linear-gradient(#228c1d, #91ce50);
-  border-radius: 20px;
+    width: 85%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient(#228c1d, #91ce50);
+    border-radius: 20px;
 }
 
 .Bacon {
-  width: 80%;
-  height: 3%;
-  background: linear-gradient(#bf3813, #c45e38);
-  margin: 2% auto;
+    width: 80%;
+    height: 3%;
+    background: linear-gradient(#bf3813, #c45e38);
+    margin: 2% auto;
 }
 
 .Burger {
-  width: 100%;
-  margin: auto;
-  height: 250px;
-  overflow: auto;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    overflow: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 @media (min-width: 1000px) and (min-height: 700px) {
-  .Burger {
-    width: 700px;
-    height: 600px;
-  }
+    .Burger {
+        width: 700px;
+        height: 600px;
+    }
 }
 
 .ingredients {
-  display: flex;
-  justify-content: space-between;
-  margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
 }
 
 .pic-btn {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .btn {
-  display: flex;
-  align-items: center;
-  margin-bottom: 18px;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    cursor: pointer;
 }
 
 .img {
-  width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .ing-count {
-  width: 695px;
-  height: 600px;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    width: 695px;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .burger-wrap {
-  border: 2px solid black;
+    border: 2px solid black;
 }
 
 .name {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 .count {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .btn-remove {
-  margin: 14px 0 0 52px;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 38px 42px 10px 7px;
-  outline: none;
-  border: none;
-  border-radius: 6px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 17px;
-  font-weight: 600;
-  text-decoration: none;
-  color: black;
-  background-image: url("./assets/x.svg");
-  background-repeat: no-repeat;
-  cursor: pointer;
-  user-select: none;
-  appearance: none;
-  touch-action: manipulation;
+    margin: 14px 0 0 52px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 38px 42px 10px 7px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    background-image: url("./assets/x.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+}
+
+.btn-remove:active {
+    background-color: #228c1d;
 }

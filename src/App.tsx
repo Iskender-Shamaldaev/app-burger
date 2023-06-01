@@ -24,6 +24,8 @@ const App = () => {
         {id: '4', name: 'Bacon', count: 0}
     ]);
 
+    const [totalPrice, setTotalPrice] = useState(30);
+
     const buttonClick = (name: string) => {
         setIngredients(prevState => {
             return prevState.map(ingredient => {
@@ -41,16 +43,28 @@ const App = () => {
     const removeClick = (id: string) => {
         setIngredients((prevState) => {
             return prevState.map((ingredient) => {
-                if (ingredient.id === id) {
+                if (ingredient.id === id && ingredient.count > 0) {
                     return {
                         ...ingredient,
-                        count: 0
+                        count: ingredient.count - 1,
                     };
                 }
                 return ingredient;
             });
         });
     };
+
+    const array: React.ReactNode[] = [];
+
+    ingredients.map(component => {
+        if (component.count > 0) {
+            for (let i = 0; i < component.count; i++) {
+                array.push(<div className={component.name} key={component.id + i}></div>);
+            }
+        }
+        return component;
+    });
+
 
 
 
@@ -79,9 +93,10 @@ const App = () => {
                 </div>
             </div>
             <div className="burger-wrap">
-                <Burger />
+                <Burger
+                    array={array}
+                />
             </div>
-
         </div>
     );
 };

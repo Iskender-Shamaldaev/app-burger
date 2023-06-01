@@ -11,7 +11,7 @@ const Buttons: React.FC<IButtonProps> = (props) => {
     return (
         <div className="pic-btn">
             <button className="btn" onClick={props.onClick}>
-                <img className="img" src={props.image} alt="Ingredient" />
+                <img className="img" src={props.image} alt="Ingredient"/>
             </button>
             <h1 className="name">{props.name}</h1>
         </div>
