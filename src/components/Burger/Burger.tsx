@@ -2,6 +2,7 @@ import React from 'react';
 
 interface IBurgerProps {
     array: React.ReactNode[];
+    totalPrice: number;
 }
 
 const Burger: React.FC<IBurgerProps> = (props) => {
@@ -13,7 +14,7 @@ const Burger: React.FC<IBurgerProps> = (props) => {
             </div>
             {props.array}
             <div className="BreadBottom"></div>
-            <p>Price:</p>
+            <p>Price: {props.totalPrice}</p>
         </div>
     );
 };

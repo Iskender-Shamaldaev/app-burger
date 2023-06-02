@@ -38,6 +38,14 @@ const App = () => {
                 return ingredient;
             });
         });
+
+        setTotalPrice((price) => {
+            const ingredient = INGREDIENTS.find((item) => item.name === name);
+            if (ingredient) {
+                return price + ingredient.price;
+            }
+            return price;
+        });
     };
 
     const removeClick = (id: string) => {
@@ -52,6 +60,21 @@ const App = () => {
                 return ingredient;
             });
         });
+
+        setTotalPrice((price) => {
+            const ingredient = INGREDIENTS.find((item) => item.id === id);
+
+            const current = ingredients.find((item) => item.id === id);
+
+                if (current && current.count > 0 && price > 30) {
+
+                        if (ingredient) {
+                            return price - ingredient.price;
+                        }
+                    }
+
+            return price;
+        });
     };
 
     const array: React.ReactNode[] = [];
@@ -64,9 +87,6 @@ const App = () => {
         }
         return component;
     });
-
-
-
 
     return (
         <div className="App">
@@ -95,6 +115,7 @@ const App = () => {
             <div className="burger-wrap">
                 <Burger
                     array={array}
+                    totalPrice={totalPrice}
                 />
             </div>
         </div>
